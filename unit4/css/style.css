@@ -1,34 +1,40 @@
-*{
-	margin: 0px;
-	padding: 0px;
+.clear{
+	clear: both;
 }
-/*header*/
 .mi-wrapper{
 	width: 1060px;
-	margin: 0 auto;
-	margin-top: 80px;
+	margin: 70px auto 0; /*horizont*/
 }
-.mi-wrapper--small{
-	width: 900px;
+/*модифткатор после основного блока*/
+.mi-wrapper-small{
+width: 900px;	
 }
+
+
 .mi-header{
 	margin-top: 70px;
 }
-.mi-header-logo{
-transition: ease .5s opacity;
-}
+/*ховер делается на ссылку*/
 .mi-header-logo:hover{
-opacity: 0.5;
+	opacity: .5;
 }
-
+/*транзишн делается на элемент*/
+.mi-header-logo{
+	transition: ease 1s opacity;
+}
 .mi-header-list{
 	list-style: none;
 	padding-left: 0;
 	margin: 0;
 }
-.clear{
-	clear: both;
+/*флоат делаем для навигации*/
+/*отталкиваем картинку вниз*/
+
+.mi-header-nav{
+	float: right;
+	margin-bottom: 70px;	
 }
+
 .mi-header-item{
 	display: inline-block;
 	padding: 0 60px;
@@ -37,96 +43,100 @@ opacity: 0.5;
 	padding-right: 0;
 }
 .mi-header-item:first-child{
-	padding-right: 0;
+	padding-left: 0;
 }
+
+/*транзишн делается на элемент*/
 .mi-header-link{
 	text-transform: uppercase;
 	text-decoration: none;
 	color: #626262;
 	font-size: 14px;
-	transition: ease color .5s;
+	transition: ease .5s color;
 	line-height: 24px;
 }
+/*ховер делается на ссылку*/
 .mi-header-link:hover{
-	color: #000;
+color: #000;
 }
-.mi-header-nav{
-		float: right;
-		margin-bottom: 70px;
-}
+/*чтобы картинка всегда занимала весь блок*/
 .mi-header-image img{
 	width: 100%;
 	height: auto;
 }
-/*dairy*/
+/*Diary*/
 .mi-tag{
-font-size: 14px;
-text-transform: uppercase;
-color: #626262;
-padding-top: 26px;
+	color: #b4ad9e;
+	font-size: 14px;
+	text-transform: uppercase;
+	padding-top: 26px;
+	margin-bottom: 0;
 }
-
 .mi-title{
 	font-size: 30px;
 	color: #626262;
 	padding: 26px 0;
 	margin: 0;
 }
-
-.mi-text{
+.mi-text p{
 	margin-top: 0;
-	font-size: 14px;
 	line-height: 24px;
 	color: #626262;
-	margin-bottom: 26px;
+	font-size: 14px;
+
 }
 .mi-comment{
 	text-decoration: none;
 }
-
+/*Blog*/
 .mi-blog-item-image{
-height: 280px;
-}
-.mi-blog-item{
-	width: 45%;
+	height: 280px;	/*для примера*/
 	overflow: hidden;
-	float:left;
-	margin: 70px 0;
-	-ms-text-align-last: auto;
-	text-align: left;
 }
+/*картинка должна быть всегда не больше блока*/
 .mi-blog-item-image img{
 	min-width: 100%;
 	min-height: 100%;
+
+}
+.mi-blog-item{
+	width: 45%;
+float: left;
+margin: 70px 0;
 }
 .mi-blog-item:nth-child(2n+1){
 	margin-right: 10%;
 }
 .mi-blog-item-tag{
-font-size: 14px;
-text-transform: uppercase;
-color: #626262;
-padding-top: 26px;
+	color: #b4ad9e;
+	font-size: 14px;
+	text-transform: uppercase;
+	padding-top: 26px;
+	margin-bottom: 0;
 }
 .mi-blog-item-title{
-	margin-top: 0;
-	font-size: 14px;
+font-size: 30px;
+	color: #626262;
+	padding: 26px 0;
+	margin: 0;
+}
+.mi-blog-item-text{
+margin-top: 0;
 	line-height: 24px;
 	color: #626262;
-	margin-bottom: 26px;
+	font-size: 14px;
 }
-.mi-blog-nore{
-	display: inline-block;
-	font-size: 20px;
-	color: #626262;
-	line-height: 60px;
-	height: 60px;
-	white-space: normal;
-	padding: 0 36px;
-	text-decoration: none;
-	border: 1px solid #626262;
+.mi-blog-more{
+font-size: 20px;
+color: #626262;
+text-decoration:none;
+line-height: 50px;
+height: 50px;
+white-space: normal;
+padding: 0 36px;
+border: 1px solid #626262;
+display: inline-block;
+}
+.mi-center{
 	text-align: center;
 }
-.mi-blog{
-	text-align: center;
-}	
