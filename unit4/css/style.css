@@ -1,27 +1,26 @@
-
 *{
-	margin: 0;
+	margin: 0px;
 	padding: 0;
 }
+/*header*/
 .mi-wrapper{
 	width: 1060px;
 	margin: 0 auto;
 	margin-top: 70px;
 }
-
 .mi-wrapper--small{
 	width: 900px;
 }
-
 .mi-header{
 	margin-top: 70px;
-}
-.mi-header-logo:hover{
-opacity: 0.5;
 }
 .mi-header-logo{
 transition: ease .5s opacity;
 }
+.mi-header-logo:hover{
+opacity: 0.5;
+}
+
 .mi-header-list{
 	list-style: none;
 	padding-left: 0;
