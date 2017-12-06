@@ -206,3 +206,52 @@ right: -99999px;
 .mi-footer-social a{
 	padding: 0 20px;
 }
+.mi-tag{
+	color: #b4ad9e;
+	font-size: 14px;
+	text-transform: uppercase;
+	padding-top: 26px;
+	margin-bottom: 0;
+}
+.mi-comments-item__photo img{
+border-radius: 50%;
+width: 75px;
+height: 75px;
+}
+
+.mi-comments-item__photo{
+float: left;
+width: 105px;
+}
+
+.mi-comments-item__author{
+margin: 0;
+padding: 0;
+}
+
+.mi-comments-item__info{
+float: left;
+width: calc(100% - 105px);
+margin: 0;
+padding: 0;
+}
+.mi-comments-item__text{
+margin: 0;
+padding: 0;	
+}
+.mi-comments-item__reply{
+margin: 0;
+padding: 0;
+}
+.mi-comments-item-message{
+	padding: 25px 30px;
+	height: 70px;
+	width: 100%;
+	border: 1px solid #c8c8c8;
+	border-radius: 5px;
+	resize: none;
+	outline: none;
+}
+.mi-comments-item-message:focus{
+	border: 1px solid green;
+}
