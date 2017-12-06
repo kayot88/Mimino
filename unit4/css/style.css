@@ -1,6 +1,9 @@
 .clear{
 	clear: both;
 }
+body{
+	overflow-x: hidden;
+}
 .mi-wrapper{
 	width: 1060px;
 	margin: 70px auto 0; /*horizont*/
@@ -9,8 +12,6 @@
 .mi-wrapper-small{
 width: 900px;	
 }
-
-
 .mi-header{
 	margin-top: 70px;
 }
@@ -136,7 +137,72 @@ white-space: normal;
 padding: 0 36px;
 border: 1px solid #626262;
 display: inline-block;
+transition: ease all .5s;
+}
+.mi-blog-more:hover{
+	background-color: #f0f0f0;
+	color: blue;
+	border: 1px solid blue;
 }
 .mi-center{
 	text-align: center;
+}
+.mi-blog-newsleter{
+	width: 100%;
+	float: left;
+	text-align: center;
+	margin: 70px 0;	
+	font-size: 30px;
+	background-color: #f0f0f0;
+	position: relative;
+	bottom: 780px;
+}
+
+.mi-blog-newsleter-title{
+	font-size: 30px;
+}
+.mi-blog-newsleter:before{
+content:'';
+display: block;
+position: absolute;
+background-color: #f0f0f0;
+top: 0;
+bottom: 0;
+right: 0;
+left: 0;
+z-index: -1;
+left: -99999px;
+right: -99999px;
+}
+
+.mi-blog-newsleter:after{
+	
+}
+.mi-footer{
+	padding: 40px 0;
+	background-color: #f0f0f0;
+	margin: 0;
+
+
+}
+.mi-footer-link{
+	text-decoration: none;
+	font-size: 14px;
+	color: #000;
+	font-weight: bold;
+	margin-bottom: 45px;
+}
+.mi-footer-link:hover{
+	text-decoration: underline;
+}
+.mi-footer-social{
+	text-decoration: none;
+	font-size: 14px;
+	color: #000;
+	font-weight: bold;
+	float: right;
+	margin: 0;
+}
+.mi-footer-social a{
+	padding: 0 20px;
 }
